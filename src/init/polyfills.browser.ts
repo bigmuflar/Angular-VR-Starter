@@ -2,6 +2,7 @@
  * @author: @brakmic
  */
 import 'aframe'; // MUST import A-Frame before zone.js!
+import 'aframe-text-geometry-component';
 // Polyfills
 // ----------
 

@@ -13,6 +13,7 @@
     "@angularclass/hmr": "^2.1.1",
     "@angularclass/hmr-loader": "^3.0.2",
     "aframe": "^0.6.0",
+    "aframe-text-geometry-component": "^0.5.1",
     "core-js": "^2.4.1",
     "lodash": "^4.17.2",
     "reflect-metadata": "^0.1.10",

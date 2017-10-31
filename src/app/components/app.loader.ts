@@ -8,12 +8,13 @@ import { VrModuleType } from 'app/enums';
 
 const panorama = <IVrModule>{
               id: '001',
-              name: 'Panorama',
+              name: 'Enterprise Dev Room',
               type: VrModuleType.AFrame,
               markup: `
-             <a-scene>
-               <a-sky src="assets/images/puydesancy.jpg" rotation="0 -130 0"></a-sky>
-             </a-scene>
+               <a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
+                 <a-sky rotation="0 -130 0" src="assets/images/enterprise_dev.jpg" material="" geometry=""></a-sky>
+                 <a-entity position="-1.149 1.228 -1.432" rotation="0 -30 0" text-geometry="size:1;value:JUSTIN;font:https://rawgit.com/ngokevin/kframe/master/components/text-geometry/lib/helvetiker_regular.typeface.json" id="justin"></a-entity>
+               </a-scene>
               `
             };
 const curvedMockups = <IVrModule>{
@@ -194,7 +195,7 @@ const shopping = <IVrModule>{
     markup: `
         <a-scene>
         <a-assets>
-                <a-asset-item id="why-male-models" 
+                <a-asset-item id="why-male-models"
                                 src="/assets/images/shopping/man/man.dae">
                 </a-asset-item>
                 <img id="fall" src="/assets/images/shopping/fall.png">
@@ -278,4 +279,3 @@ const dynamicLights = <IVrModule> {
 export const predefinedModules: IVrModule[] = [panorama, curvedMockups,
                                                spheresAndFog, shopping,
                                                dynamicLights];
-
